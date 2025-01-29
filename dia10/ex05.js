@@ -1,6 +1,6 @@
 // Criação de uma classe Agenda para armazerna e exibir contatos
 
-class Contatos{
+class Agenda{
     constructor (nome, telefone){
         this.nome = nome
         this.telefone = telefone
@@ -9,8 +9,8 @@ class Contatos{
         console.log(`Nome: ${this.nome}\nTelefone: ${this.telefone}\n`)
     }
 } 
-const contato1 = new Contatos("Paulo", 11111111)
+const contato1 = new Agenda("Paulo", 11111111)
 contato1.contato()
 
-const contato2 = new Contatos("João", 2222222)
+const contato2 = new Agenda("João", 2222222)
 contato2.contato()
