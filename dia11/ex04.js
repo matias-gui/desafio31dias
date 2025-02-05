@@ -1,4 +1,4 @@
-
+// Criação de uma classe, com valores privados, que só é possivel ter acesso acertando a senha
 
 class Cofre{
     #valor1
@@ -6,15 +6,15 @@ class Cofre{
     #valor3
 
     constructor(){
-        this.#valor1 = 10000
-        this.#valor2 = 200
+        this.#valor1 = "Joias"
+        this.#valor2 = "Diamantes"
         this.#valor3 = 3500
         this.senha = "paulo2025"
     }
 
     acessar(senha){
         if( senha === this.senha){
-            console.log(`Parabéns, você acertou a senha, os valores que há no cofre são:\n R$${this.#valor1} \n R$${this.#valor2}\n R$${this.#valor3}`)
+            console.log(`Parabéns, você acertou a senha, os itens que há no cofre são:\n ${this.#valor1} \n ${this.#valor2}\n R$${this.#valor3}`)
         }else{
             console.log("Senha incorreta!")
         }
