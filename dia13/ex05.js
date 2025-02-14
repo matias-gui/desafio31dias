@@ -17,7 +17,7 @@ class Quadrado extends Forma{
     calcArea(){
         const area = this.lado * this.lado
 
-        console.log(`A área do quadrado é: ${area}`)
+        console.log(`A área do Quadrado é: ${area}`)
     }
 }
 
@@ -31,7 +31,7 @@ class Retangulo extends Forma{
     calcArea(){
         const area = this.comprimento * this.largura
 
-        console.log(`A área do retangulo é: ${area}`)
+        console.log(`A área do Retângulo é: ${area}`)
     }
 }
 
