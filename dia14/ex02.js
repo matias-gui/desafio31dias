@@ -1,19 +1,21 @@
+// Função para verificar se uma string é um palíndromo
 
+function Pilha(str){
 
-function pilha(){
-    const pilha = [""];
+    let pilha = []
 
-    if(pilha.length === ""){
-        return true
-    };
-     if(pilha.length === 1){
-        return true; 
+// Adicionando cada valor do parâmentro ao array pilha
+    for(let char of str){
+        pilha.push(char)
     }
-    if(pilha[0] !== pilha[pilha.length - 1]){
-        return false;
+// Percorrendo o parâmentro str, verificando se cada elemento removido do topo do array é igual  
+    for(let char of str){
+        if(char !== pilha.pop(str)){
+            return false
+        }
     }
 
-    return pilha (pilha.slice(1, -1))
+    return true
 }
 
-console.log(pilha())
+console.log(Pilha("palíndromo"))
